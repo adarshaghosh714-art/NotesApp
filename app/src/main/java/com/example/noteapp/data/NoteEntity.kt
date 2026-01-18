@@ -9,5 +9,5 @@ data class NoteEntity(
     val id: Int,
     val title: String,
     val content: String,
-    val timeStamp: Long
+    val timestamp: Long = System.currentTimeMillis()
 )

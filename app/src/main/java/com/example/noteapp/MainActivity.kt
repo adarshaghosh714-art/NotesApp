@@ -16,7 +16,8 @@ class MainActivity : ComponentActivity() {
         val db = Room.databaseBuilder(
             applicationContext,
             NoteDatabase::class.java,"notes_db"
-        ).build()
+        ).fallbackToDestructiveMigration()
+            .build()
 
         val repository = NotesRepository(db.noteDao())
 

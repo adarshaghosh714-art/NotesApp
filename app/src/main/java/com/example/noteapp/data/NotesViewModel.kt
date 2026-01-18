@@ -18,7 +18,7 @@ class NotesViewModel(
                 NoteEntity(
                     title = title,
                     content = content,
-                    timeStamp = System.currentTimeMillis(),
+                    timestamp = System.currentTimeMillis(),
                     id =0
                 )
             )

@@ -1,5 +1,7 @@
 package com.example.noteapp.data
 
+import kotlinx.coroutines.flow.Flow
+
 class NotesRepository (private val dao : NoteDao){
     fun getNotes()= dao.getNotes()
     suspend fun insert(note :NoteEntity) =dao.insert(note)
